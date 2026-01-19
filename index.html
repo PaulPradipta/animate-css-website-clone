@@ -1,0 +1,860 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animate.css | A cross-browser library of CSS animations</title>
+    <link rel="icon" type="image/x-icon" href="Images/Favicon.png">
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <div id="page">
+      <div id="content-section">
+        <h1 id="title" onanimationend="removeEffect()">Animate.css</h1>
+        <p id="desc">Just-add-water CSS animations</p>
+      </div>
+      <div id="sidebar">
+        <img src="Images/Moon-Icon.png" alt="" id="icon" onclick="addDarkMode()"/>
+        <h3 id="animation-type">Attention Seekers</h3>
+        <ul>
+          <li>
+            <button onclick="addEffect('animate__animated animate__bounce')">
+              bounce
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__bounce')"
+            ></i>
+          </li>
+          <li>
+            <button onclick="addEffect('animate__animated animate__flash')">
+              flash
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__flash')"
+            ></i>
+          </li>
+          <li>
+            <button onclick="addEffect('animate__animated animate__pulse')">
+              pulse
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__pulse')"
+            ></i>
+          </li>
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__rubberBand')"
+            >
+              rubberBand
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__rubberBand')"
+            ></i>
+          </li>
+
+          <li>
+            <button onclick="addEffect('animate__animated animate__shakeX')">
+              shakeX
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__shakeX')"
+            ></i>
+          </li>
+
+          <li>
+            <button onclick="addEffect('animate__animated animate__shakeY')">
+              shakeY
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__shakeY')"
+            ></i>
+          </li>
+
+          <li>
+            <button onclick="addEffect('animate__animated animate__headShake')">
+              headShake
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__headShake')"
+            ></i>
+          </li>
+
+          <li>
+            <button onclick="addEffect('animate__animated animate__swing')">
+              swing
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__swing')"
+            ></i>
+          </li>
+
+          <li>
+            <button onclick="addEffect('animate__animated animate__tada')">
+              tada
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__tada')"
+            ></i>
+          </li>
+
+          <li>
+            <button onclick="addEffect('animate__animated animate__wobble')">
+              wobble
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__wobble')"
+            ></i>
+          </li>
+
+          <li>
+            <button onclick="addEffect('animate__animated animate__jello')">
+              jello
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__jello')"
+            ></i>
+          </li>
+
+          <li>
+            <button onclick="addEffect('animate__animated animate__heartBeat')">
+              heartBeat
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__heartBeat')"
+            ></i>
+          </li>
+        </ul>
+
+        <h3 id="animation-type">Back Entrances</h3>
+        <ul>
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__backInDown')"
+            >
+              backInDown
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__backInDown')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__backInLeft')"
+            >
+              backInLeft
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__backInLeft')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__backInRight')"
+            >
+              backInRight
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__backInRight')"
+            ></i>
+          </li>
+
+          <li>
+            <button onclick="addEffect('animate__animated animate__backInUp')">
+              backInUp
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__backInUp')"
+            ></i>
+          </li>
+        </ul>
+
+        <h3 id="animation-type">Back Exits</h3>
+        <ul>
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__backOutDown')"
+            >
+              backOutDown
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__backOutDown')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__backOutLeft')"
+            >
+              backOutLeft
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__backOutLeft')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__backOutRight')"
+            >
+              backOutRight
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__backOutRight')"
+            ></i>
+          </li>
+
+          <li>
+            <button onclick="addEffect('animate__animated animate__backOutUp')">
+              backOutUp
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__backOutUp')"
+            ></i>
+          </li>
+        </ul>
+
+        <h3 id="animation-type">Bouncing Entrances</h3>
+        <ul>
+          <li>
+            <button onclick="addEffect('animate__animated animate__bounceIn')">
+              bounceIn
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__bounceIn')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__bounceInDown')"
+            >
+              bounceInDown
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__bounceInDown')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__bounceInLeft')"
+            >
+              bounceInLeft
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__bounceInLeft')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__bounceInRight')"
+            >
+              bounceInRight
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__bounceInRight')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__bounceInUp')"
+            >
+              bounceInUp
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__bounceInUp')"
+            ></i>
+          </li>
+        </ul>
+
+        <h3 id="animation-type">Bouncing Exits</h3>
+        <ul>
+          <li>
+            <button onclick="addEffect('animate__animated animate__bounceOut')">
+              bounceOut
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__bounceOut')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__bounceOutDown')"
+            >
+              bounceOutDown
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__bounceOutDown')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__bounceOutLeft')"
+            >
+              bounceOutLeft
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__bounceOutLeft')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__bounceOutRight')"
+            >
+              bounceOutRight
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__bounceOutRight')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__bounceOutUp')"
+            >
+              bounceOutUp
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__bounceOutUp')"
+            ></i>
+          </li>
+        </ul>
+
+        <h3 id="animation-type">Fading Entrances</h3>
+        <ul>
+          <li>
+            <button onclick="addEffect('animate__animated animate__fadeIn')">
+              fadeIn
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__fadeIn')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__fadeInDown')"
+            >
+              fadeInDown
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__fadeInDown')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__fadeInDownBig')"
+            >
+              fadeInDownBig
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__fadeInDownBig')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__fadeInLeft')"
+            >
+              fadeInLeft
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__fadeInLeft')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__fadeInLeftBig')"
+            >
+              fadeInLeftBig
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__fadeInLeftBig')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__fadeInRight')"
+            >
+              fadeInRight
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__fadeInRight')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__fadeInRightBig')"
+            >
+              fadeInRightBig
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__fadeInRightBig')"
+            ></i>
+          </li>
+
+          <li>
+            <button onclick="addEffect('animate__animated animate__fadeInUp')">
+              fadeInUp
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__fadeInUp')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__fadeInUpBig')"
+            >
+              fadeInUpBig
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__fadeInUpBig')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__fadeInTopLeft')"
+            >
+              fadeInTopLeft
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__fadeInTopLeft')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__fadeInTopRight')"
+            >
+              fadeInTopRight
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__fadeInTopRight')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__fadeInBottomLeft')"
+            >
+              fadeInBottomLeft
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__fadeInBottomLeft')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="
+                addEffect('animate__animated animate__fadeInBottomRight')
+              "
+            >
+              fadeInBottomRight
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__fadeInBottomRight')"
+            ></i>
+          </li>
+        </ul>
+
+        <h3 id="animation-type">Fading Exits</h3>
+        <ul>
+          <li>
+            <button onclick="addEffect('animate__animated animate__fadeOut')">
+              fadeOut
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__fadeOut')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__fadeOutDown')"
+            >
+              fadeOutDown
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__fadeOutDown')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__fadeOutDownBig')"
+            >
+              fadeOutDownBig
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__fadeOutDownBig')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__fadeOutLeft')"
+            >
+              fadeOutLeft
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__fadeOutLeft')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__fadeOutLeftBig')"
+            >
+              fadeOutLeftBig
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__fadeOutLeftBig')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__fadeOutRight')"
+            >
+              fadeOutRight
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__fadeOutRight')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__fadeOutRightBig')"
+            >
+              fadeOutRightBig
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__fadeOutRightBig')"
+            ></i>
+          </li>
+
+          <li>
+            <button onclick="addEffect('animate__animated animate__fadeOutUp')">
+              fadeOutUp
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__fadeOutUp')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__fadeOutUpBig')"
+            >
+              fadeOutUpBig
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__fadeOutUpBig')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__fadeOutTopLeft')"
+            >
+              fadeOutTopLeft
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__fadeOutTopLeft')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__fadeOutTopRight')"
+            >
+              fadeOutTopRight
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__fadeOutTopRight')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="
+                addEffect('animate__animated animate__fadeOutBottomRight')
+              "
+            >
+              fadeOutBottomRight
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__fadeOutBottomRight')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="
+                addEffect('animate__animated animate__fadeOutBottomLeft')
+              "
+            >
+              fadeOutBottomLeft
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__fadeOutBottomLeft')"
+            ></i>
+          </li>
+        </ul>
+
+        <h3 id="animation-type">Flippers</h3>
+        <ul>
+          <li>
+            <button onclick="addEffect('animate__animated animate__flip')">
+              flip
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__flip')"
+            ></i>
+          </li>
+
+          <li>
+            <button onclick="addEffect('animate__animated animate__flipInX')">
+              flipInX
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__flipInX')"
+            ></i>
+          </li>
+
+          <li>
+            <button onclick="addEffect('animate__animated animate__flipInY')">
+              flipInY
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__flipInY')"
+            ></i>
+          </li>
+
+          <li>
+            <button onclick="addEffect('animate__animated animate__flipOutX')">
+              flipOutX
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__flipOutX')"
+            ></i>
+          </li>
+
+          <li>
+            <button onclick="addEffect('animate__animated animate__flipOutY')">
+              flipOutY
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__flipOutY')"
+            ></i>
+          </li>
+        </ul>
+
+        <h3 id="animation-type">LightSpeed</h3>
+        <ul>
+          <li>
+            <button
+              onclick="
+                addEffect('animate__animated animate__lightSpeedInRight')
+              "
+            >
+              lightSpeedInRight
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__lightSpeedInRight')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__lightSpeedInLeft')"
+            >
+              lightSpeedInLeft
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__lightSpeedInLeft')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="
+                addEffect('animate__animated animate__lightSpeedOutRight')
+              "
+            >
+              lightSpeedOutRight
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__lightSpeedOutRight')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="
+                addEffect('animate__animated animate__lightSpeedOutLeft')
+              "
+            >
+              lightSpeedOutLeft
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__lightSpeedOutLeft')"
+            ></i>
+          </li>
+        </ul>
+
+        <h3 id="animation-type">Rotating Entrances</h3>
+        <ul>
+          <li>
+            <button onclick="addEffect('animate__animated animate__rotateIn')">
+              rotateIn
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__rotateIn')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__rotateInDownLeft')"
+            >
+              rotateInDownLeft
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__rotateInDownLeft')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="
+                addEffect('animate__animated animate__rotateInDownRight')
+              "
+            >
+              rotateInDownRight
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__rotateInDownRight')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__rotateInUpLeft')"
+            >
+              rotateInUpLeft
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__rotateInUpLeft')"
+            ></i>
+          </li>
+
+          <li>
+            <button
+              onclick="addEffect('animate__animated animate__rotateInUpRight')"
+            >
+              rotateInUpRight
+            </button>
+            <i
+              class="ri-file-copy-line"
+              onclick="copyAnimation('animate__rotateInUpRight')"
+            ></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="Javascript/script.js"></script>
+  </body>
+</html>

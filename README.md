@@ -1,2 +1,4 @@
-# animate-css-website-clone
-A desktop-only interactive demo of Animate.css. Apply, preview, and copy CSS animations on a text element. Features categorized animations, copy-to-clipboard, dark/light mode toggle, smooth transitions, and a clean modern UI using Google Fonts and Remix Icons.
+Animate.css Demo Project
+📄 Project Description
+
+This project is a web-based interactive demo of Animate.css, a popular CSS animation library. It allows users to preview, apply, and copy CSS animations on a text element in real-time. The main purpose of this project is to provide a visual and interactive way to explore different CSS animations without writing code from scratch.

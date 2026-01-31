@@ -1,4 +1,5 @@
 const title = document.getElementById("title")
+const successMsg = '<i class="ri-checkbox-circle-fill"></i> <span>Copied</span>'
 
 const addEffect = (effect)=>{ 
     title.className = effect
@@ -9,7 +10,17 @@ const removeEffect = ()=>{
 }
 
 const copyAnimation = (effect)=>{
+    const toastBox = document.getElementById('toastBox')
+    const toast = document.createElement('div')
+    toast.innerHTML = successMsg
+    toastBox.appendChild(toast)
+    toast.classList.add('toast')
+
     navigator.clipboard.writeText(effect)
+
+    setTimeout(()=>{
+        toast.remove()
+    },1500)
 }
 
 const addDarkMode = ()=> {
